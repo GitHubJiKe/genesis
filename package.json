@@ -1,0 +1,35 @@
+{
+  "name": "genesis-next",
+  "version": "0.0.1",
+  "description": "genesis",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "deploy": "npm publish"
+  },
+  "author": "pengfeiyuan",
+  "license": "MIT",
+  "dependencies": {
+    "@types/lodash": "^4.14.171",
+    "chalk": "^4.1.1",
+    "commander": "^8.0.0",
+    "inquirer": "^8.1.1",
+    "jsonfile": "^6.1.0",
+    "lodash": "^4.17.21",
+    "log-symbols": "^4.1.0",
+    "ora": "^5.4.1",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "eslint-config-recommended": "^4.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "arrowParens": "always",
+    "printWidth": 80,
+    "singleQuote": false,
+    "semi": true
+  }
+}
