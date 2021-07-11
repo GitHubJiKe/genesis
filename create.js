@@ -15,14 +15,12 @@ async function create() {
   const spinner = ora();
   try {
     spinner.start("开始克隆仓库到本地");
-    const successed = await clone(url, branch, name);
+    await clone(url, branch, name);
     // 5.修改项目名称
-    if (successed) {
-      spinner.succeed("仓库克隆成功");
-      modifyProjectName(name);
-      // 6.提示成功
-      utils.logGreen(`恭喜您，项目创建成功`, true);
-    }
+    spinner.succeed("仓库克隆成功");
+    modifyProjectName(name);
+    // 6.提示成功
+    utils.logGreen(`恭喜您，项目创建成功`, true);
   } catch (error) {
     spinner.fail("仓库克隆失败");
     utils.logRed(
@@ -76,7 +74,7 @@ async function inputProjectName() {
 }
 
 async function clone(url, branch, name) {
-  await utils.asyncExec(`git clone -b ${branch} ${url} ${name}`);
+  return utils.asyncExec(`git clone -b ${branch} ${url} ${name}`);
 }
 
 function modifyProjectName(name) {

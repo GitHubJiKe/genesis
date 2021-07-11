@@ -12,7 +12,6 @@ exports.promisify = function (fn) {
       args.push((err, ...res) => {
         if (err) {
           reject(err);
-          s;
           return;
         }
         resolve(res);
