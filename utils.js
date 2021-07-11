@@ -38,7 +38,6 @@ async function makeDirOfConfig() {
     return Promise.resolve(true);
   }
   await asyncExec("mkdir ~/.genesis");
-  console.log(3);
 }
 
 function isConfigExistInRoot() {
