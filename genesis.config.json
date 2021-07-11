@@ -1,19 +1,9 @@
 {
   "templates": [
     {
-      "url": "https://gitee.com/peteryuan/about-me.git",
-      "name": "new-about",
+      "url": "git@github.com:GitHubJiKe/genesis.git",
+      "name": "genesis",
       "branchs": ["master"]
-    },
-    {
-      "url": "https://gitee.com/peteryuan/ts-react-app.git",
-      "name": "ts-react-app",
-      "branchs": ["master", "develop"]
-    },
-    {
-      "url": "https://gitee.com/peteryuan/ts-react-app.git",
-      "name": "ts-react-app4",
-      "branchs": ["master", "feature"]
     }
   ]
 }
